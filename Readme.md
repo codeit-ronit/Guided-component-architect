@@ -83,22 +83,47 @@ The frontend allows:
 
 ---
 
-## 🛠 Running Locally
+# 🚀 Running the Project Locally
 
-### Backend
+This project consists of two parts:
 
+- 🧠 Backend (Agentic Angular Code Generator)
+- 🖥 Frontend (Live Preview Studio)
+
+Both must be run separately.
+
+---
+
+## 🔹 1. Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/guided-component-architect.git
+cd guided-component-architect
+Step 1 — Create Virtual Environment
 cd backend
 python -m venv venv
 source venv/bin/activate
+Step 2 — Install Dependencies
 pip install -r requirements.txt
+Step 3 — Add Environment Variables
+
+Create a .env file inside backend/:
+
+GROQ_API_KEY=your_groq_api_key_here
+Step 4 — Run Backend CLI
 python main.py
-
-
-### Frontend
-
-cd frontend
+Step 1 — Install Dependencies
+cd ../frontend
 npm install
+
+🔹 Step 2 — Run Development Server
 npm run dev
+
+
+Open:
+
+http://localhost:3000
+
 
 
 
