@@ -1,7 +1,8 @@
 import json
 import logging
-from utils import call_llm
-from validator import validate_component
+from core.utils import call_llm
+from core.validator import validate_component
+
 
 logging.basicConfig(level=logging.INFO)
 
@@ -40,8 +41,8 @@ Return corrected code only.
 
 
 def generate_with_self_correction(user_prompt, generator_function):
-    from generator import generate_component
-    from validator import load_design_system
+    from agents.generator import generate_component
+    from core.validator import load_design_system
 
     design_system = load_design_system()
 

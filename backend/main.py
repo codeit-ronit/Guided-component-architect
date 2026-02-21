@@ -1,8 +1,8 @@
-from generator import generate_component
-from self_corrector import generate_with_self_correction
-from exporter import export_component
-from validator import load_design_system
-from editor import edit_component
+from agents.generator import generate_component
+from agents.self_corrector import generate_with_self_correction
+from core.exporter import export_component
+from core.validator import load_design_system
+from agents.editor import edit_component
 
 
 def main():

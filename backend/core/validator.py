@@ -1,5 +1,6 @@
 import json
 import re
+import os
 
 
 class ValidationResult:
@@ -9,9 +10,11 @@ class ValidationResult:
 
 
 def load_design_system():
-    with open("design-system.json", "r") as f:
-        return json.load(f)
+    base_dir = os.path.dirname(os.path.dirname(__file__))  # backend/
+    config_path = os.path.join(base_dir, "config", "design-system.json")
 
+    with open(config_path, "r") as f:
+        return json.load(f)
 
 def check_bracket_balance(code):
     stack = []

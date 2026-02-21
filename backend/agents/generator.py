@@ -1,9 +1,13 @@
 import json
-from utils import call_llm
-
+from core.utils import call_llm
+import os
 
 def generate_component(user_prompt):
-    with open("design-system.json", "r") as f:
+    
+    base_dir = os.path.dirname(os.path.dirname(__file__))  # backend/
+    config_path = os.path.join(base_dir, "config", "design-system.json")
+
+    with open(config_path, "r") as f:
         design_system = json.load(f)
 
     system_prompt = f"""

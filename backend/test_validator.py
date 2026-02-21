@@ -1,4 +1,5 @@
-from validator import validate_component
+from core.validator import validate_component
+
 
 test_code = """
 <div style="color: #ff0000;">
