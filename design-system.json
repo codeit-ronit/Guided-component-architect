@@ -1,0 +1,14 @@
+{
+  "colors": {
+    "primary": "#6366f1",
+    "secondary": "#0f172a",
+    "background": "#f8fafc",
+    "text": "#1e293b"
+  },
+  "borderRadius": "8px",
+  "fontFamily": "Inter",
+  "spacingUnit": "16px",
+  "button": {
+    "padding": "12px 24px"
+  }
+}
